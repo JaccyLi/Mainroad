@@ -64,7 +64,7 @@
 # Footer
 - id: footer_credits
   translation:
-    "<center>Based on Hugo. 2020 @suo.li. All Rights Reserved.</center>"
+          "<center>@2020 Based on Hugo. <a href=\"https://www.suosuoli.cn\" rel=\"nofollow noopener\" target=\"_blank\">suo.li</a> All Rights Reserved.</center>"
           #    "Generated with <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> and \
           #    <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a> theme."
 
