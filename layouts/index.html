@@ -6,36 +6,6 @@
 	</div>
 	{{- end }}
 
-        <!-- algolia -->
-	{{- if .Site.Params.algolia.appId -}}
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
-        {{- end -}}
-
-
-        {{- if .Site.Params.algolia.appId -}}
-          <li style="display:inline-block;margin-right:10px;">
-            <input type="search" class="docsearch-input" placeholder="Search" />
-          </li>
-        {{- end -}}
-        <!-- algolia -->
-
-
-        <!-- algolia -->
-	{{- if .Site.Params.algolia.appId -}}
-	<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-	<script>
-	    docsearch({
-	    apiKey: {{ .Site.Params.algolia.searchOnlyKey }},
-	    indexName: {{ .Site.Params.algolia.indexName }},
-	    appId: {{ .Site.Params.algolia.appId }},
-	    inputSelector: '.docsearch-input',
-	    debug: false,
-	    });
-	</script>
-	{{- end -}}
-        <!-- algolia -->
-
-
 	{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
 	{{- range $paginator.Pages }}
 		{{- .Render "summary" }}

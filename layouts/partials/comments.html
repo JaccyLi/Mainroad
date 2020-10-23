@@ -3,13 +3,17 @@
 	{{ template "_internal/disqus.html" . }}
 </section>
 {{ end }}
+
 -->
 
-<script src="https://utteranc.es/client.js"
-        repo="https://github.com/JaccyLi/hugo-blog.git"
-        issue-term="pathname"
-        label="hugo"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
+<!--在需要添加评论框的地方插入下面的 section 标签-->
+<section id="isso-thread"></section>
+<!--然后引入 embed.min.js 插件-->
+<script data-isso="/isso/"
+        data-isso-require-author="false"
+        data-isso-require-email="false"
+        data-isso-max-comments-top="20"
+        data-isso-max-comments-nested="10"
+        data-isso-reveal-on-click="20"
+        src="https://www.suosuoli.cn/js/embed.min.js"></script>
+
