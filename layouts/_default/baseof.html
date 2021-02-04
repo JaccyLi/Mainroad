@@ -82,5 +82,27 @@
 
 {{ end }}
 
+<!-- load my customize js-->
+<script src="js/custom.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bubbly-bg@0.2.3/dist/bubbly-bg.js"></script>
+<script>
+//bubbly({
+//  colorStart: '#4c004c',
+//  colorStop: '#1a001a',
+//  velocityFunc: () => 0.1 + Math.random() * 0.3,
+//  bubbleFunc:() => `hsla(${Math.random() * 360}, 100%, 50%, ${Math.random() * 0.25})`
+//});
+bubbly({
+      blur:40,
+      colorStart: '#194167',
+      colorStop: '#112144',
+      radiusFunc:() => 5 + Math.random() * 15,
+      angleFunc:() => -Math.PI / 2,
+      velocityFunc:() => Math.random() * 0.3,
+      bubbleFunc:() => `hsla(${200 + Math.random() * 50}, 100%, 65%, .1)`,
+      bubbles:10
+});
+</script>
+
 </body>
 </html>
